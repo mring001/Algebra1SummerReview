@@ -30,9 +30,12 @@
 \usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
 % These packages are all incorporated in the memoir class to one degree or another...
+\usepackage{tikz}
 \usepackage{amsmath}
+\usetikzlibrary{arrows}
 \usepackage{xfrac}
 \usepackage{cancel}
+\usepackage{graphicx}
 
 %%% HEADERS & FOOTERS
 \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
@@ -229,14 +232,45 @@ x &= -3
 \end{align*}
 \begin{align*}
 -(x-3) &= -20 \\
+{\cancel{-}} {\cancel{-}} (x - 3) &= {\cancel{-}}{\cancel{-}} 20 \\
+(x - 3) &= 20 \\
+(x - {\cancel{3}} + {\cancel{3}}) &= 20 + 3 \\
+x &= 23
 \end{align*}
 \begin{align*}
 155 &= 6x - 3 + 4x \\
+155 + 3 &= 6x - {\cancel{3}} + {\cancel{3}} + 4x \\
+158 &= 10x \\
+\frac{158}{10} &= \frac{\cancel{10}x}{\cancel{10}} \\
+\frac{158}{10} &= x \\
+x &= 15.8
 \end{align*}
 
-\section{Solve the Inequality then Graph on a Number Line, Show all work}
+\section{Solve the Inequality then graph on a number line$\ldots$ show all work}
 
-More text.
+\begin{align*}
+4x + 7 &< 37 \\
+4x + \cancel{7} - \cancel{7} &< 37 - 7 \\
+4x &< 30 \\
+\frac{\cancel{4}x}{\cancel{4}} &< \frac{30}{4} \\
+x &< 7.5
+\end{align*}
+
+\includegraphics{ineq_1}
+
+\begin{align*}
+-5x + 9 &\geq 24 \\
+-5x + {\cancel{9}} -{\cancel{9}} &\geq 24 - 9 \\
+-5x &\geq 15 \\
+\frac{\cancel{-5}x}{\cancel{-5}} &\leq \frac{15}{-5} \\
+x &\leq -3
+\end{align*}
+
+\includegraphics{ineq_2}
+
+\begin{align*}
+3x - 5 &\leq 2x - 13 \\
+\end{align*}
 
 \section{Functions and Graphing}
 
